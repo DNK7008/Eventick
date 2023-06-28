@@ -1,13 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eventick</title>
-    <link rel="stylesheet" href="./src/styles/normalize.css">
-    <link rel="stylesheet" href="./src/styles/css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./src/styles/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <img class="header__logo" src="./src/image/Logo.svg" alt="Eventick" />
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__items">
+              <a href="#" class="header___link">Schedule</a>
+            </li>
+            <li class="header__items">
+              <a href="#" class="header___link">Speakers</a>
+            </li>
+            <li class="header__items">
+              <a href="#" class="header___link">Ticket</a>
+            </li>
+            <li class="header__items">
+              <a href="#" class="header___link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button header__button">Login</button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <img
+            class="hero__image"
+            src="./src/image/heroimg2.png"
+            alt="Show Ticket"
+          />
+          <div class="hero__info">
+            <h1 class="hero__title">SBS MTV The Kpop Show Ticket Package</h1>
+            <span class="hero__subtitle"
+              >Look no further! Our SBS The Show tickets are the simplest way
+              for you to experience a live Kpop recording.</span
+            >
+            <button class="button hero__button--primary">Get Ticket</button>
+            <button class="button hero__button--transparent">Learn More</button>
+          </div>
+          <form class="form">
+            <label class="form__label">
+              Search Event
+              <input
+                class="form__input"
+                type="text"
+                name="name"
+                placeholder="Konser Jazz"
+              />
+            </label>
+            <label class="form__label">
+              Place
+              <input
+                class="form__input"
+                type="text"
+                name="surname"
+                placeholder="Indonesia"
+              />
+            </label>
+            <label class="form__label">
+              Time
+              <input
+                class="form__input"
+                type="text"
+                name="surname"
+                placeholder="Any date"
+              />
+            </label>
+          </form>
+        </div>
+      </section>
+      <section class="events">
+        <div class="container">
+          <h2 class="events__title">Upcoming Events</h2>
+          <div class="events__list">
+            <input type="selected" class="events__select" placeholder="Weekdays">
+            <input type="selected" class="events__select" >
+            <input type="selected" class="events__select" >
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
 </html>

@@ -339,44 +339,38 @@ template {
 }
 
 @font-face {
-  font-family: DMSans;
+  font-family: "DMSans";
   font-weight: 900;
   font-style: normal;
-  src: url("./src/fonts/DMSans-Bold.woff2") format("woff2"), url("./src/fonts/DMSans-Bold.woff") format("woff"), url("./src/fonts/DMSans-Bold.eot") format("eot");
+  src: url("../../fonts/DMSans/DMSans-Bold.woff2") format("woff2"), url("../../fonts/DMSans/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans/DMSans-Bold.eot") format("eot");
   font-display: swap;
 }
 @font-face {
-  font-family: DMSans;
+  font-family: "DMSans";
   font-weight: 500;
   font-style: normal;
-  src: url("./src/fonts/DMSans-Medium.woff2") format("woff2") url("./src/fonts/DMSans-Medium.woff") format("woff") url("./src/fonts/DMSans-Medium.eot") format("eot");
+  src: url("../../fonts/DMSans/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans/DMSans-Medium.eot") format("eot");
   font-display: swap;
 }
 @font-face {
-  font-family: DMSans;
+  font-family: "DMSans";
   font-weight: 400;
   font-style: normal;
-  src: url("./src/fonts/DMSans-Regular.woff2") format("woff2"), url("./src/fonts/DMSans-Regular.woff") format("woff"), url("./src/fonts/DMSans-Regular.eot") format("eot");
+  src: url("../../fonts/DMSans/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans/DMSans-Regular.eot") format("eot");
   font-display: swap;
 }
 @font-face {
-  font-family: ProximaNova;
+  font-family: "Proxima Nova";
   font-weight: 700;
   font-style: normal;
-  src: url("./src/fonts/ProximaNova-Bold.woff2") format("woff2"), url("./src/fonts/ProximaNova-Bold.woff") format("woff"), url("./src/fonts/ProximaNova-Bold.eot") format("eot");
+  src: url("../../fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2"), url("../../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../../fonts/ProximaNova/ProximaNova-Bold.eot") format("eot");
   font-display: swap;
 }
 @font-face {
-  font-family: ProximaNova;
-  font-style: normal;
-  src: url("./src/fonts/ProximaNova-Medium.woff2") format("woff2"), url("./src/fonts/ProximaNova-Medium.woff") format("woff"), url("./src/fonts/ProximaNova-Medium.eot") format("eot");
-  font-display: swap;
-}
-@font-face {
-  font-family: ProximaNova;
+  font-family: "Proxima Nova";
   font-weight: 400;
   font-style: normal;
-  src: url("./src/fonts/ProximaNova-Regular.woff2") format("woff2"), url("./src/fonts/ProximaNova-Regular.woff") format("woff"), url("./src/fonts/ProximaNova-Regular.eot") format("eot");
+  src: url("../../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"), url("../../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../../fonts/ProximaNova/ProximaNova-Regular.eot") format("eot");
   font-display: swap;
 }
 * {
@@ -391,7 +385,7 @@ body {
   font-family: DMSans;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.31rem;
+  line-height: 1.31;
   color: #FFFFFF;
 }
 
@@ -402,16 +396,18 @@ body {
 }
 
 .header {
-  width: 100vw;
+  min-width: 100vw;
   background: url("../../image/hero-background-color.jpg");
   background-position: center 0;
   background-size: cover;
+  background-repeat: no-repeat;
   background: url("../../image/hero-background-image.jpg");
   background-position: center 0;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .header__container {
-  padding-top: 23px;
+  padding-top: 22px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -432,12 +428,11 @@ body {
   list-style: none;
 }
 .header__link {
-  list-style: none;
   text-decoration: none;
   font-family: DMSans;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.31rem;
+  line-height: 1.31;
   color: #FFFFFF;
   transition: 0.3s;
 }
@@ -464,8 +459,110 @@ body {
   color: #F5167E;
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  background-color: #000000;
+.hero {
+  min-width: 100vw;
+  background: url("../../image/hero-background-color.jpg");
+  background-position: 0 -75px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url("../../image/hero-background-image.jpg");
+  background-position: 0 -75px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__container {
+  padding-top: 86px;
+  padding-bottom: 83px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__image {
+  position: relative;
+  z-index: 2;
+  left: -35px;
+}
+.hero__info {
+  min-width: 443px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.hero__title {
+  font-family: Proxima Nova;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.31;
+  color: #FFFFFF;
+}
+.hero__subtitle {
+  font-family: DMSans;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.hero__button--primary {
+  margin-right: 20px;
+  min-width: 182px;
+  padding: 19px 46px;
+  background-color: #F5167E;
+  border: 1.5px solid #ffffff;
+  border-radius: 50px;
+  font-family: DMSans;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.31rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.3s;
+  border-color: #F5167E;
+  color: #ffffff;
+}
+.hero__button--primary:hover {
+  background-color: #64193c;
+  border-color: #64193c;
+  color: #ffffff;
+}
+.hero__button--transparent {
+  min-width: 182px;
+  padding: 19px 46px;
+  background-color: transparent;
+  border: 1.5px solid #ffffff;
+  border-radius: 50px;
+  font-family: DMSans;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.31rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero__button--transparent:hover {
+  border-color: #F5167E;
+  color: #F5167E;
+}
+
+.data {
+  position: relative;
+  max-width: 1116px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.data__wrapper {
+  position: absolute;
+  top: -70px;
+  z-index: 5;
+  min-width: 1086px;
+  min-height: 140px;
+  padding: 30px 48px 48px 48px;
+  border-radius: 20px;
+  background-color: #242565;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

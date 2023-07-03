@@ -1,28 +1,43 @@
-// .hero
-//   width: 100vh
-//   +bground-color
-//   +bground-image
-  // &__container
-  //   =flexible
+.hero
+  min-width: 100vw
+  +bground-color ($bg-position: 0 -75px)
+  +bground-image ($bg-position: 0 -75px)
+  &__container
+    padding-top: 86px
+    padding-bottom: 83px
+    +flexible
+  &__image
+    position: relative
+    z-index: 2
+    left: -35px
 
-  // &__image
+  &__info
+    min-width: 443px
+    +flexible ($flex-direction: column, $justify-content:center, $align-items:start)
 
-  // &__info
+  &__title
+    +font ($family:Proxima Nova, $weight:700, $size:2.5rem)
 
-  // &__title
+  &__subtitle
+    +font ($family:DMSans, $weight:400, $size:1.125rem, $line-height:1)
+    margin-bottom: 30px
 
-  // &__subtitle
+  &__button--primary
+    margin-right: 20px
+    min-width: 182px
+    padding: 19px 46px
+    +button ($bg-color:#F5167E, $size:1.125rem )
+    border-color: #F5167E
+    color: #ffffff
+    &:hover
+      background-color: #64193c
+      border-color: #64193c
+      color: #ffffff
 
-  // &__button--primary
-
-  // &__button--transparent
-
-// .container 
-
-// .button 
-
-// .form 
-
-// 		&__label 
-
-// 		&__input 
+  &__button--transparent
+    min-width: 182px
+    padding: 19px 46px
+    +button
+    &:hover
+      border-color: #F5167E
+      color: #F5167E

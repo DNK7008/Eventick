@@ -48,41 +48,48 @@
               >Look no further! Our SBS The Show tickets are the simplest way
               for you to experience a live Kpop recording.</span
             >
-            <button class="button hero__button--primary">Get Ticket</button>
-            <button class="button hero__button--transparent">Learn More</button>
+            <div class="wrapper-button">
+              <button class="button hero__button--primary">Get Ticket</button>
+              <button class="button hero__button--transparent">
+                Learn More
+              </button>
+            </div>
           </div>
-          <form class="form">
-            <label class="form__label">
-              Search Event
-              <input
-                class="form__input"
-                type="text"
-                name="name"
-                placeholder="Konser Jazz"
-              />
-            </label>
-            <label class="form__label">
-              Place
-              <input
-                class="form__input"
-                type="text"
-                name="surname"
-                placeholder="Indonesia"
-              />
-            </label>
-            <label class="form__label">
-              Time
-              <input
-                class="form__input"
-                type="text"
-                name="surname"
-                placeholder="Any date"
-              />
-            </label>
-          </form>
         </div>
       </section>
-      <section class="events">
+      <section class="data">
+        <div class="data__wrapper">
+          <label class="data__label">
+            <span class="data__span">Search Event</span>
+            <input
+              class="data__input"
+              type="text"
+              name="name"
+              placeholder="Konser Jazz"
+            />
+          </label>
+          <label class="data__label">
+            <span class="data__span">Place</span>
+            <input
+              class="data__input"
+              type="text"
+              name="surname"
+              placeholder="Indonesia"
+            />
+          </label>
+          <label class="data__select">
+            <span class="data__span">Time</span>
+            <select placeholder="Any date">
+              <!-- <option disabled>Any date</option> -->
+              <option value="1">1</option>
+              <option selected value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </label>
+        </div>
+      </section>
+      <!-- <section class="events">
         <div class="container">
           <h2 class="events__title">Upcoming Events</h2>
           <div class="events__list">
@@ -95,8 +102,8 @@
             <input type="selected" class="events__select" />
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">Foooter</footer>
+    <!-- <footer class="footer">Foooter</footer> -->
   </body>
 </html>

@@ -1,4 +1,4 @@
-=font ($family:DMSans, $weight:400, $size:1rem, $line-height:1.31rem, $color:#FFFFFF)
+=font ($family:DMSans, $weight:400, $size:1rem, $line-height:1.31, $color:#FFFFFF)
   font-family: $family
   font-weight: $weight
   font-size: $size
@@ -11,8 +11,8 @@
   justify-content: $justify-content
   align-items: $align-items
 
-=link ($family:DMSans, $weight:500, $size:1rem, $line-height:1.31rem, $color:#FFFFFF)
-  list-style: none
+=link ($family:DMSans, $weight:500, $size:1rem, $line-height:1.31, $color:#FFFFFF)
+  list-style:none
   text-decoration: none
   font-family: $family
   font-weight: $weight
@@ -24,21 +24,27 @@
 =button ($bg-color:transparent, $border:1.5px solid #ffffff,$family:DMSans, $weight:500, $size:1rem, $line-height:1.31rem, $color:#FFFFFF)
   background-color: $bg-color
   border: $border
-  border-radius: 50px
+  border-radius: 50px  
   font-family: $family
   font-weight: $weight
   font-size: $size
   line-height: $line-height
   color: $color
   cursor: pointer
-  transition: 0.3s
+  transition: 0.3s 
 
 =bground-color ($bg-position:center 0)
   background: url("../../image/hero-background-color.jpg")
-  background-position: center 0
+  background-position: $bg-position
   background-size: cover
+  // background-size: contain
+  // background-size: 100vw 100vh
+  background-repeat: no-repeat
 
 =bground-image ($bg-position:center 0)
   background: url("../../image/hero-background-image.jpg")
   background-position: $bg-position
   background-size: cover
+  // background-size: contain
+  // background-size: 100vw 100vh
+  background-repeat: no-repeat

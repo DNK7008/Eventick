@@ -1,10 +1,26 @@
 .header
-  position: fixed
   width: 100vw
-  border: 1px solid red
+  +bground-color
+  +bground-image
   &__container
-    display: flex
-    justify-content: space-between
+    padding-top: 23px
+    +flexible
+    gap: 50px
+  &__nav
+    margin-left: auto
   &__list
-    display: flex
-    border: 1px solid green
+    +flexible
+    gap: 38px
+  &__items
+    list-style: none
+  &__link
+    +link
+    &:hover
+      color: #F5167E
+.button
+  min-width: 101px
+  padding: 9px 20px
+  +button
+  &:hover
+    border-color: #F5167E
+    color: #F5167E

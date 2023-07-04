@@ -77,32 +77,173 @@
               placeholder="Indonesia"
             />
           </label>
-          <label class="data__select">
+          <label class="data__label">
             <span class="data__span">Time</span>
-            <select placeholder="Any date">
-              <!-- <option disabled>Any date</option> -->
+            <select class="data__select" data-default="Any date">
+              <option value disabled selected>Any date</option>
               <option value="1">1</option>
-              <option selected value="2">2</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
             </select>
           </label>
         </div>
       </section>
-      <!-- <section class="events">
-        <div class="container">
+      <section class="events">
+        <div class="container events__container">
+          <div class="events__wrapper">
           <h2 class="events__title">Upcoming Events</h2>
-          <div class="events__list">
-            <input
-              type="selected"
-              class="events__select"
-              placeholder="Weekdays"
-            />
-            <input type="selected" class="events__select" />
-            <input type="selected" class="events__select" />
+          <div class="events__filter">
+            <select class="events__select">
+              <option value disabled selected>Weekdays</option>
+              <option value="1">1</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <select class="events__select">
+              <option value disabled selected>Event Type</option>
+              <option value="1">1</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <select class="events__select">
+              <option value disabled selected>Any Category</option>
+              <option value="1">1</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
           </div>
+          </div>
+          <div class="events__card card">
+            <img
+              class="card__image"
+              src="./src/image/events/events-1.jpg"
+              alt="foto image"
+            />
+            <div class="card__date">
+              <span class="card__month">apr</span>
+              <span class="card__number">14</span>
+            </div>
+            <div class="card__info">
+              <h3 class="card__title">
+                Wonder Girls 2010 Wonder Girls World Tour San Francisco
+              </h3>
+              <p class="card__about">
+                We’ll get you directly seated and inside for you to enjoy the
+                show.
+              </p>
+            </div>
+          </div>
+          <div class="events__wrapper-card">
+            <div class="card">
+              <img
+                class="card__image"
+                src="./src/image/events/events-2.jpg"
+                alt="foto image"
+              />
+              <div class="card__date">
+                <span class="card__month">aug</span>
+                <span class="card__number">20</span>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">
+                  JYJ 2011 JYJ Worldwide Concert Barcelona
+                </h3>
+                <p class="card__about">
+                  Directly seated and inside for you to enjoy the show.
+                </p>
+              </div>
+            </div>
+            <div class="events__card card">
+              <img
+                class="card__image"
+                src="./src/image/events/events-3.jpg"
+                alt="foto image"
+              />
+              <div class="card__date">
+                <span class="card__month">sep</span>
+                <span class="card__number">18</span>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">
+                  2011 Super Junior SM Town Live '10 World Tour New York City
+                </h3>
+                <p class="card__about">
+                  Directly seated and inside for you to enjoy the show.
+                </p>
+              </div>
+            </div>
+            <div class="events__card card">
+              <img
+                class="card__image"
+                src="./src/image/events/events-4.jpg"
+                alt="foto image"
+              />
+              <div class="card__date">
+                <span class="card__month">apr</span>
+                <span class="card__number">14</span>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">
+                  Wonder Girls 2010 Wonder Girls World Tour San Francisco
+                </h3>
+                <p class="card__about">
+                  We’ll get you directly seated and inside for you to enjoy the
+                  show.
+                </p>
+              </div>
+            </div>
+            <div class="events__card card">
+              <img
+                class="card__image"
+                src="./src/image/events/events-5.jpg"
+                alt="foto image"
+              />
+              <div class="card__date">
+                <span class="card__month">aug</span>
+                <span class="card__number">20</span>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">
+                  JYJ 2011 JYJ Worldwide Concert Barcelona
+                </h3>
+                <p class="card__about">
+                  Directly seated and inside for you to enjoy the show.
+                </p>
+              </div>
+            </div>
+            <div class="events__card card">
+              <img
+                class="card__image"
+                src="./src/image/events/events-6.jpg"
+                alt="foto image"
+              />
+              <div class="card__date">
+                <span class="card__month">sep</span>
+                <span class="card__number">18</span>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">
+                  2011 Super Junior SM Town Live '10 World Tour New York City
+                </h3>
+                <p class="card__about">
+                  Directly seated and inside for you to enjoy the show.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="button events__button">
+            Load More
+          </button>   
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer">Foooter</footer> -->
   </body>

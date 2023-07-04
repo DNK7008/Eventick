@@ -1,17 +1,34 @@
 .data
   position: relative
+  top: -70px
+  z-index: 5
   max-width: 1116px
-  padding: 0 15px
   margin: 0 auto
   &__wrapper
-    position: absolute
-    top: -70px
-    z-index: 5
-    min-width: 1086px
     min-height: 140px
     padding: 30px 48px 48px 48px
     border-radius: 20px
     background-color: #242565
     +flexible 
   &__lebel
+    +flexible ($flex-direction:column)
+  &__span
+    display: block
+    margin-bottom: 11px 
+    +font
+  &__input  
+    display: block
+    background-color: #242565
+    border: none
+    max-width: 290px
+    border-bottom: 1px solid #7778B0
+    outline: none
+    +font ($weight:700, $size:1.375rem)
+  &__select
+    width: 290px
+    +font ($weight:700, $size:1.375rem, $color:#7778B0)
+    background-color: #242565
+    border: none
+    border-bottom: 1px solid #7778B0
     
+

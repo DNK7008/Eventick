@@ -428,6 +428,7 @@ body {
   list-style: none;
 }
 .header__link {
+  list-style: none;
   text-decoration: none;
   font-family: DMSans;
   font-weight: 500;

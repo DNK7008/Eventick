@@ -551,6 +551,7 @@ body {
   top: -70px;
   z-index: 5;
   max-width: 1116px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .data__wrapper {
@@ -629,5 +630,4 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: auto;
 }/*# sourceMappingURL=style.css.map */
